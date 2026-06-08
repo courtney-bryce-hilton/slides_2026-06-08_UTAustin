@@ -1,0 +1,22 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <h1 class="title">$title$</h1>
+$if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+  <p class="author">$author$</p>
+$endfor$
+$for(institute)$
+  <p class="institute">$institute$</p>
+$endfor$
+$if(date)$
+  <p class="date">$date$</p>
+$endif$
+$if(title-logo)$ 
+  <img src=$title-logo$ id="title-logo" alt="institutional-logo">
+$endif$
+
+<audio class="media_example hide" controls>
+  <source src="media/audio/mario.mp3" type="audio/mp3">
+</audio>
+</section>

@@ -1,0 +1,294 @@
+---
+title: "using citizen science to scalably track environmental effects<br>on human development"
+subtitle: "UT Austin, Department of Human Development and Family Sciences"
+author: "-<br>Courtney B. Hilton"
+format:
+  revealjs:
+    theme: [default, styles.scss]
+    slide-number: true
+    chalkboard: true
+    center-title-slide: true
+    auto-stretch: false
+    css: [research-program-styles.css]
+    template-partials:
+      - title-slide.html
+    includes:
+      after-body: research-program-viz.html 
+resources:
+  - research-program-viz.js
+  - research-program-styles.css
+filters:
+  - slide-wrapper.lua
+title-slide-attributes:
+  data-background-color: "#000F46"
+  data-background-size: contain
+date: 2026-06-08
+date-format: long
+title-logo: "./media/logos/melb.png"
+---
+
+![](media/images/rotating-earth.gif){width="40%" .abs-center}
+
+---
+
+![](media/images/usa_map.png){width="70%" .abs-center}
+
+---
+
+![](media/images/uni_students.jpg){width="80%" .abs-center}
+
+---
+
+![Henrich, Heine, Norenzayan, 2010, *BBS*](media/images/weird.png){width="70%" .abs-center}
+
+## what should we do? {.title-center}
+
+---
+
+![](media/images/rotating-earth.gif){width="40%" .abs-center}
+
+---
+
+![](media/images/usa_map.png){width="70%" .abs-center}
+
+## how do we get bigger and more diverse datasets? {.title-center .clear}
+
+---
+
+![themusiclab.org](media/images/tml.png){width="80%" .abs-center}
+
+---
+
+![](media/images/td-game.png){width="60%" .abs-center}
+
+---
+
+```{=html}
+{{< include td-demo.html >}}
+```
+
+---
+
+![](media/images/td-feedback.png){width="90%" .abs-center}
+
+---
+
+![](media/figures/participant_map.png){width="100%" .abs-center}
+
+---
+
+![](media/figures/countries.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/language.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/ages.png){width="60%" .abs-center}
+
+---
+
+![](media/figures/gender.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/musicLessons.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/education.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/education2.png){width="70%" .abs-center}
+
+## what can we do with this data? {.title-center}
+
+---
+
+![](media/figures/fig2a.png){width="70%" .abs-center}
+
+---
+
+![Bethlehem et al., 2022, *Nature*](media/images/brain-chart.png){width="65%" .abs-center}
+
+---
+
+![](media/images/wm-trajectory.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/fig2b.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/fig2a.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/fig2c.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/fig2d.png){width="70%" .abs-center}
+
+---
+
+![](media/figures/figure2.png){width="90%" .abs-center}
+
+## why is this interesting? {.title-center}
+
+---
+
+![Chiao, 2009, *In Progress in Brain Research*](media/images/Chiao_2009.png){width="80%" .abs-center}
+
+---
+
+![Bethlehem et al., 2022, *Nature*](media/images/brain-chart.png){width="65%" .abs-center}
+
+---
+
+![7 Telsa MRI Scanner (~$14,000,000)](media/images/mri.avif){width="80%" .abs-center}
+
+
+## introducing my new MRI machine... {.title-center .bit-smaller}
+
+---
+
+![](media/images/piano1.png){width="100%" .abs-center}
+
+---
+
+![](media/images/piano2.png){width="100%" .abs-center}
+
+---
+
+![](media/images/piano3.png){width="100%" .abs-center}
+
+---
+
+![](media/images/piano4.png){width="100%" .abs-center}
+
+## why might this be useful? {.title-center}
+
+---
+
+![7 Telsa MRI Scanner (~$14,000,000)](media/images/mri.avif){width="80%" .abs-center}
+
+---
+
+![0.00 Telsa ruler ($1.28)](media/images/ruler.jpg){width="50%" .abs-center}
+
+---
+
+![NCD Risk Factor Collaboration, 2016, *eLife*](media/images/height.png){width="90%" .abs-center}
+
+## can we see a similar map with pitch? {.title-center .bit-smaller}
+
+---
+
+![](media/figures/SES-map-height.png){width="100%" .abs-center}
+
+---
+
+![](media/figures/SES-map-pitch.png){width="100%" .abs-center}
+
+---
+
+![](media/figures/SES-map-hdi.png){width="100%" .abs-center}
+
+---
+
+![](media/figures/SESplot.png){width="60%" .abs-center}
+
+
+## other more interesting result... {.title-center}
+
+---
+
+![](media/figures/countryGenderDiff.png){width="60%" .abs-center}
+
+## wrapping things up... {.title-center}
+
+---
+
+![Bogin, 2020, *Patterns of Human Growth, Third Edition*](media/images/traditional.png){width="90%" .abs-center}
+
+---
+
+![Bogin, 2020, *Patterns of Human Growth, Third Edition*](media/images/biocultural.png){width="90%" .abs-center}
+
+---
+
+![Atari, Henrich, Schulz, 2025, *Nature Human Behaviour*](media/images/atari.png){width="80%" .abs-center}
+
+## some thoughts on future work {.title-center}
+
+
+## thanks!!
+
+![](media/logos/arc.jpg){width="50%" .abs-center}
+
+---
+
+
+---
+
+---
+
+![](media/figures/figure1_c.png){width="70%" .abs-center}
+
+
+
+
+
+## why? {.title-center}
+
+
+---
+
+![](media/images/spurious-correlation.webp){width="90%" .abs-center}
+
+---
+
+![](media/images/pitch-to-brain-map.png){width="90%" .abs-center}
+
+---
+
+![](media/images/hearing.png){width="90%" .abs-center}
+
+## pitch discrimination is not hearing
+
+![](media/figures/peripheral_auditory.png){width="60%" .abs-center}
+
+---
+
+![](media/figures/proxy-identification.png){width="100%" .abs-center}
+
+---
+
+![](media/images/charlie.webp){width="70%" .abs-center}
+
+::: {.quote-slide}
+
+![](media/images/tanner.jpg)
+
+> “[human growth] reflects rather accurately the material and moral conditions of that society”
+>
+> — James Tanner
+
+:::
+
+
+
+
+
+```{=html}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="research-program-viz.js"></script>
+<script type="text/javascript" src="zoomer.js"></script>
+<script type="text/javascript" src="audio_player.js"></script>
+```
+
+

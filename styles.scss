@@ -1,0 +1,280 @@
+/*-- scss:default Uni Melb colour --*/
+$traditional_heritage_blue: #00467f;
+$traditional_heritage_50blue: #8087a2;
+$black_sheoke_red: #ff2d3c;
+$yam-daisy-yellow: #ffd629;
+$yam-daisy-yellow50: #ffea94;
+
+/*-- scss:rules --*/
+
+h2 {
+  background-color: $traditional_heritage_blue !important;
+  color: white !important;
+  display: table !important;
+  margin: 0 auto !important;
+  margin-bottom: 50px !important;
+  padding: 10px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  text-align: center !important;
+}
+
+.box1 {
+  background-color: $traditional_heritage_blue !important;
+  color: white !important;
+  display: table !important;
+  margin: 0 auto !important;
+  margin-bottom: 50px !important;
+  padding: 10px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.date {
+  font-size: 60%;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.center2 {
+  margin: auto !important;
+  text-align: center;
+  display: block;
+}
+
+.reveal .slides section .slide-content .img-wrap.abs-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  display: block;
+  margin: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.reveal .slides section .slide-content .img-wrap.abs-center > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.huge {
+  font-size: 175%;
+}
+
+img.hov {
+  max-width: 80%;
+}
+
+img.hov:hover {
+  max-width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+#title-logo {
+  height: 180px;
+  margin: auto;
+}
+
+.title {
+  margin-top: 40px !important;
+  color: $yam-daisy-yellow50 !important;
+  font-size: 1.7em !important;
+}
+
+.subtitle {
+  font-size: 0.8em !important;
+}
+
+.bit-smaller {
+  font-size: 80%;
+}
+
+.normal {
+  font-size: 1em;
+}
+
+/*-- scss:testing --*/
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.element {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: $traditional_heritage_blue;
+  border-radius: 10px;
+  color: white;
+  text-align: center !important;
+}
+
+.element2 {
+  margin: 10px 0;
+  padding: 7px;
+  background-color: $black_sheoke_red;
+  border-radius: 10px;
+  color: white;
+  text-align: center !important;
+  font-size: 0.8em;
+}
+
+.line {
+  width: 2px;
+  height: 50px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.accent {
+  color: $yam-daisy-yellow !important;
+}
+
+/*-- scss: implementing fork lines for flow-chart --*/
+
+$fork-line-width: 100;
+// 0.7071068 is the cosine of 0.7853982, which is 45 degrees in radians
+$adjacent: round(($fork-line-width * 0.7071068)/2 * 100) / 100;
+// $adjacent: round(($fork-line-width * cos(45deg))/2 * 100) / 100;
+
+.fork-lines {
+  position: relative;
+  width: 80px;
+  height: 60px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: calc(#{$fork-line-width}px);
+    height: 2px;
+    background-color: black;
+    top: 50%;
+  }
+
+  &:before {
+    left: calc(50% - #{$adjacent}px);
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:after {
+    left: calc(50% + #{$adjacent}px);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+.line-above::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 20px;
+  background-color: black;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+/*-- CSS RULES TO FIX QUARTO POSITIONING TO MY LIKING --*/
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  display: grid !important;
+  grid-template-rows: min-content 1fr !important; /* h2 + content */
+  height: 100% !important;
+}
+
+.reveal .slides section .slide-content {
+  grid-row: 2;
+  min-height: 0;
+  display: grid;
+}
+
+.reveal .slides section .slide-content .img-wrap {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1%;
+}
+
+.reveal .slides section .slide-content .img-wrap.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reveal .slides section .slide-content .img-wrap > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.reveal .slides section .slide-content .img-wrap.cover > img {
+  object-fit: cover;
+}
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  display: grid !important;
+  grid-template-rows: min-content 1fr !important;
+  height: 100% !important;
+}
+
+.reveal .slides > section.title-center,
+.reveal .slides > section > section.title-center {
+  display: grid !important;
+  grid-template-rows: 1fr !important; /* no reserved title row */
+  place-items: center; /* center both axes */
+  height: 100% !important;
+}
+
+/* Center the H2 itself and remove spacing */
+.reveal .slides section.title-center > h2 {
+  margin: 0;
+  text-align: center;
+}
+
+/* If your Lua filter emitted a .slide-content, hide it on title-center slides */
+.reveal .slides section.title-center > .slide-content {
+  display: none !important;
+}
+
+.yellow {
+  color: yellow;
+}
+
+figcaption {
+  text-align: center;
+}
