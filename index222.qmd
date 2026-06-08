@@ -51,6 +51,22 @@ title-logo: "./media/logos/melb.png"
 
 ![](media/images/usa_map.png){width="70%" .abs-center}
 
+---
+
+![](media/figures/correlation_example_blank.png){width="65%" .abs-center}
+
+---
+
+![](media/figures/correlation_example_min1.png){width="65%" .abs-center}
+
+---
+
+![](media/figures/correlation_example_min2.png){width="65%" .abs-center}
+
+---
+
+![](media/figures/correlation_example.png){width="65%" .abs-center}
+
 ## how do we get bigger and more diverse datasets? {.title-center .clear}
 
 ---
